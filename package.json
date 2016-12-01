@@ -1,0 +1,31 @@
+{
+  "name": "audio-toolkit-temp",
+  "version": "1.0.0",
+  "description": "hello audio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/czhaoli/react-native-audio-toolkitTemp.git"
+  },
+  "dependencies": {
+    "async": "^2.0.0",
+    "eventemitter3": "^1.2.0",
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "audio",
+    "recorder",
+    "play",
+    "react-native"
+  ],
+  "author": "laozhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/czhaoli/react-native-audio-toolkitTemp/issues"
+  },
+  "homepage": "https://github.com/czhaoli/react-native-audio-toolkitTemp#readme"
+}
