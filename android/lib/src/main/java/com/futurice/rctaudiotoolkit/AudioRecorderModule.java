@@ -179,7 +179,7 @@ public class AudioRecorderModule extends ReactContextBaseJavaModule implements
         MediaRecorder recorder = new MediaRecorder();
 
         // TODO: allow configuring?
-        recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        // recorder.setAudioSource(MediaRecorder.AudioSource.MIC); // TODO
 
         int format = formatFromPath(path);
         int encoder = encoderFromPath(path);
@@ -203,16 +203,23 @@ public class AudioRecorderModule extends ReactContextBaseJavaModule implements
             sampleRate = options.getInt("sampleRate");
         }
 
-        recorder.setOutputFormat(format);
-        recorder.setAudioEncoder(encoder);
-        recorder.setAudioEncodingBitRate(bitrate);
-        recorder.setAudioChannels(channels);
-        // recorder.setAudioSamplingRate(sampleRate);
+        // recorder.setOutputFormat(format); // TODO
+        // recorder.setAudioEncoder(encoder); // TODO
+        // recorder.setAudioEncodingBitRate(bitrate); // TODO
+        // recorder.setAudioChannels(channels); // TODO
+        // recorder.setAudioSamplingRate(sampleRate); // TODO
 
         Log.d(LOG_TAG, "Recorder using options: (format: " + format + ") (encoder: " + encoder + ") "
                     + "(bitrate: " + bitrate + ") (channels: " + channels + ") (sampleRate: " + sampleRate + ")");
+      
+        // TODO
+        recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+        recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+        // recorder.setOutputFile(PATH_NAME);
 
         recorder.setOutputFile(uri.getPath());
+
 
         recorder.setOnErrorListener(this);
         recorder.setOnInfoListener(this);

@@ -1,6 +1,6 @@
 {
   "name": "audio-toolkit-temp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "hello audio",
   "main": "index.js",
   "scripts": {
